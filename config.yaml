@@ -36,4 +36,10 @@ monitors:
     name: The Cloudflare Blog
     url: 'https://blog.cloudflare.com/'
     method: GET
+    expectStatus: 200  
+  
+  - id: support.eblab.net
+    name: EBLab Screenconnect
+    url: 'https://support.eblab.net/'
+    method: GET
     expectStatus: 200
