@@ -1,6 +1,6 @@
 settings:
   title: 'Status Page'
-  url: 'https://status-page.eidam.dev' # used for Slack messages
+  url: 'https://status.bitbybit.consulting/' # used for Slack messages
   logo: logo-192x192.png # image in ./public/ folder
   daysInHistogram: 90 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
@@ -41,5 +41,11 @@ monitors:
   - id: support.eblab.net
     name: EBLab Screenconnect
     url: 'https://support.eblab.net/'
+    method: GET
+    expectStatus: 200
+
+  - id: support.eblab.net DOWN
+    name: EBLab Screenconnect
+    url: 'https://support.eblab2.net/'
     method: GET
     expectStatus: 200
