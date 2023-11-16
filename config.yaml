@@ -43,3 +43,9 @@ monitors:
     url: 'https://support.eblab.net/'
     method: GET
     expectStatus: 200
+
+  - id: support.eblab.net DOWN
+    name: EBLab Screenconnect
+    url: 'https://support.eblab2.net/'
+    method: GET
+    expectStatus: 200
